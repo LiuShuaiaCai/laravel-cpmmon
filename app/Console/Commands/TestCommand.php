@@ -38,6 +38,7 @@ class TestCommand extends Command
      */
     public function handle()
     {
+        echo "test";
         $path = 'D:\PhpstormProjects\api.oaemesas.com\app\Console\Commands\cdr.docx';
         WordToPdf::convert($path);
         return 0;
